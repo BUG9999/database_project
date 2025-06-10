@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">team-1-ShopManager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password_disgits">abcdefghijklmnopqrstuvwxyz0123456789_</string>
+
+    <!-- 카테고리 -->
+    <array name="clothCategory">
+        <item>아우터</item>
+        <item>상의</item>
+        <item>바지</item>
+        <item>신발</item>
+        <item>잡화</item>
+    </array>
+
+    <!-- 아우터 카테고리 -->
+    <array name="outerCategory">
+        <item>자켓</item>
+        <item>패딩</item>
+        <item>후드 집업</item>
+        <item>가디건</item>
+        <item>코트</item>
+    </array>
+
+    <!-- 상의 카테고리 -->
+    <array name="topCategory">
+        <item>셔츠</item>
+        <item>후드</item>
+        <item>니트</item>
+        <item>맨투맨</item>
+        <item>반소매</item>
+    </array>
+
+    <!-- 바지 카테고리 -->
+    <array name="pantsCategory">
+        <item>데님 팬츠</item>
+        <item>슬랙스</item>
+        <item>트레이닝 팬츠</item>
+        <item>숏 팬츠</item>
+    </array>
+
+    <!-- 바지 카테고리 -->
+    <array name="shoesCategory">
+        <item>스니커즈</item>
+        <item>구두</item>
+        <item>샌들</item>
+        <item>부츠</item>
+        <item>슬리퍼</item>
+    </array>
+
+    <!-- 잡화 카테고리 -->
+    <array name="accessoriesCategory">
+        <item>가방</item>
+        <item>시계</item>
+        <item>모자</item>
+    </array>
+</resources>

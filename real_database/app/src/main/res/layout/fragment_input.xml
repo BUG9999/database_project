@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:transitionGroup="true"
+    tools:context=".fragment.InputFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/fragmentInputToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/defaultBlack"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.Team1ShopManager" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldClothCategory"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="상위 카테고리"
+                app:boxStrokeColor="@color/textFieldColor"
+                app:endIconTint="@color/textFieldColor2"
+                app:hintTextColor="@color/textFieldColor2"
+                app:startIconDrawable="@drawable/category_24px">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    app:simpleItems="@array/clothCategory" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldSubCategory"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="하위 카테고리"
+                app:boxStrokeColor="@color/textFieldColor"
+                app:endIconTint="@color/textFieldColor2"
+                app:hintTextColor="@color/textFieldColor2"
+                app:startIconDrawable="@drawable/checkroom_24px">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    app:simpleItems="@array/outerCategory" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldInputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="상품명"
+                app:boxStrokeColor="@color/textFieldColor"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textFieldColor2"
+                app:hintTextColor="@color/textFieldColor2"
+                app:startIconDrawable="@drawable/apparel_24px">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldInputPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="상품 가격"
+                app:boxStrokeColor="@color/textFieldColor"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textFieldColor2"
+                app:hintTextColor="@color/textFieldColor2"
+                app:startIconDrawable="@drawable/credit_card_24px">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldInputDiscountRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="할인율 (%)"
+                app:boxStrokeColor="@color/textFieldColor"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textFieldColor2"
+                app:hintTextColor="@color/textFieldColor2"
+                app:startIconDrawable="@drawable/credit_card_heart_24px">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textFieldInputDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="상품 설명"
+                app:boxStrokeColor="@color/textFieldColor"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/textFieldColor2"
+                app:hintTextColor="@color/textFieldColor2"
+                app:startIconDrawable="@drawable/family_star_24px">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="200"
+                    android:minLines="5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonUploadPhoto"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/defaultBlack"
+                android:text="사진 등록하기"
+                android:textColor="@color/defaultLightChip" />
+
+            <TextView
+                android:id="@+id/errorImageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="상품 이미지를 등록해주세요"
+                android:textColor="#B42D25"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageViewInput"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

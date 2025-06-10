@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Team1ShopManager" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- 타이틀 텍스트 색상 -->
+<!--        <item name="android:textColorPrimary">#EDB7A1</item>-->
+<!--        &lt;!&ndash; 메뉴 아이템 텍스트 색상 &ndash;&gt;-->
+<!--        <item name="actionMenuTextColor">#EDB7A1</item>-->
+
+        <item name="titleTextColor">@color/defaultLightChip</item>
+        <item name="colorControlNormal">@color/defaultLightChip</item>
+        <item name="chipBackgroundColor">@color/DetailChipSelect</item>
+    </style>
+
+    <style name="Theme.Team1ShopManager" parent="Base.Theme.Team1ShopManager" />
+</resources>
